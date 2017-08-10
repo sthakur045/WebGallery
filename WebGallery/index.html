@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html ng-app="WebGallery">
+<head>
+    <title>WebGallery</title>
+	<meta charset="utf-8" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/angular.js"></script>
+    <script src="Website/Scripts/app.js"></script>
+    <script src="Website/Scripts/Services/MemberService.js"></script>
+    <script src="Website/Scripts/Controllers/MemberController.js"></script>
+</head>
+<body>
+
+    <div ng-controller="MemberController">
+        <div ng-repeat="mem in members">
+            {{mem.first_name}} - {{mem.last_name}} </br>
+            {{mem.ip_address}}
+        </div>
+    </div>
+</body>
+</html>
